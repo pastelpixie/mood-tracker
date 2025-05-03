@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>My Mood Journal</h1>
+
+    <div class="mood-picker">
+      <label>Today I feel:</label>
+      <select id="mood">
+        <option value="😊">Happy</option>
+        <option value="😢">Sad</option>
+        <option value="😠">Angry</option>
+        <option value="😴">Tired</option>
+        <option value="🤩">Excited</option>
+      </select>
+    </div>
+
+    <textarea id="journal" placeholder="Write your thoughts here..."></textarea>
+
+    <button id="saveBtn">Save Entry</button>
+
+    <h2>My Entries</h2>
+    <div id="entries"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
